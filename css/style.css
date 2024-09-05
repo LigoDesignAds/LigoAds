@@ -3373,6 +3373,7 @@ body {
 .getdiv {
   position: relative;
   z-index: 1;
+  padding: 33px 28px;
 }
 
 .mapq {
