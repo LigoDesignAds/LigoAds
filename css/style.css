@@ -3713,6 +3713,45 @@ section .content p {
   display: block;
 }
 
+
+.tabslide-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heading-text {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+.image-box {
+  width: 316px;
+  height: 216px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+
+.tabimage-heading{
+  font-family: "Montserrat", sans-serif !important;
+   color:black;
+   font-weight:600 !important;
+   font-size:15px;
+}
+
 /* Tab sectoin swiper end  */
 
 .contactpadding {
