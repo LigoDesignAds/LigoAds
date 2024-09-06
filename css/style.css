@@ -3836,3 +3836,83 @@ input[type="file"]::file-selector-button {
 input[type="file"]::file-selector-button:hover {
   background-color: #d0d0d0;
 }
+
+
+
+
+.career_card {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 6px 15px rgba(64, 79, 104, 0.05);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.career_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #252525;
+  margin: 15px 0 0 0;
+  text-align: center;
+}
+
+.career_details {
+  font-size: 15px;
+  font-weight: 500;
+  color: #252525;
+  line-height: 24px;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.career_skills {
+  display: block;
+  margin-top: 10px;
+}
+
+.career_imgbox {
+  height: 75px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Small phones (max-width: 575px) */
+@media (max-width: 575px) {
+  .career_imgbox {
+      height: auto;
+  }
+}
+
+/* Medium phones and tablets (min-width: 576px and max-width: 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .career_imgbox {
+      height: auto;
+  }
+}
+
+/* Large phones and small tablets (min-width: 768px and max-width: 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .career_imgbox {
+      height: auto;
+  }
+}
+
+/* Medium tablets (min-width: 992px and max-width: 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .career_imgbox {
+      height: auto;
+  }
+}
+
+/* Large tablets (min-width: 1200px and max-width: 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .career_imgbox {
+      height: auto;
+  }
+}
