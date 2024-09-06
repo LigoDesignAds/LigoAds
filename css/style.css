@@ -1594,7 +1594,7 @@ body {
 /*** Home Banner Start ***/
 
 .home-banner {
-  /* background: url(../img/cloud.png) no-repeat center center; */
+  /* background: url(../img/cloud.webp) no-repeat center center; */
   /* background-size: 39%; */
   /* background-attachment: fixed; */
   /* background-color: transparent;
@@ -3915,4 +3915,15 @@ input[type="file"]::file-selector-button:hover {
   .career_imgbox {
       height: auto;
   }
+}
+
+.image-box-p{
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mbportfolio{
+  margin-bottom: 14px;
 }
