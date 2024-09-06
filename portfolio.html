@@ -143,11 +143,95 @@
     <!-- Portfolio Section Heading End -->
 
     <!-- Portfolio Pagination Section Start -->
-    <section class="company-logos py-2">
-        <div class="container">
-           
+
+    <section class="py-2">
+        <div class="wrapper">
+            <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
+            <ul class="tabs-box">
+                <li class="tab active" data-content="content-1">Graphic Designing</li>
+                <li class="tab" data-content="content-2">Web Designing</li>
+                <li class="tab" data-content="content-3">Ecommerce Website</li>
+                <li class="tab" data-content="content-4">Logo Designing</li>
+                <li class="tab" data-content="content-5">2D Animation</li>
+            </ul>
+            <div class="icon"><i id="right" class="fa-solid fa-angle-right"></i></div>
         </div>
     </section>
+
+    <div class="wrapper content-1 py-4" id="content-1">
+        <div class="row">
+            <!-- First Row -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="image-box-p text-center">
+                    <img src="img/tab-slide.webp" alt="image-1" class="img-fluid mbportfolio">
+                    <h3 class="tabimage-heading">Lorem Ipsum is simply dummy</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="image-box-p text-center">
+                    <img src="img/tab-slide.webp" alt="image-1" class="img-fluid mbportfolio">
+                    <h3 class="tabimage-heading">Lorem Ipsum is simply dummy</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="image-box-p text-center">
+                    <img src="img/tab-slide.webp" alt="image-1" class="img-fluid mbportfolio">
+                    <h3 class="tabimage-heading">Lorem Ipsum is simply dummy</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="image-box-p text-center">
+                    <img src="img/tab-slide.webp" alt="image-1" class="img-fluid mbportfolio">
+                    <h3 class="tabimage-heading">Lorem Ipsum is simply dummy</h3>
+                </div>
+            </div>
+            <!-- Second Row -->
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="image-box-p text-center">
+                    <img src="img/tab-slide.webp" alt="image-1" class="img-fluid mbportfolio">
+                    <h3 class="tabimage-heading">Lorem Ipsum is simply dummy</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="image-box-p text-center">
+                    <img src="img/tab-slide.webp" alt="image-1" class="img-fluid mbportfolio">
+                    <h3 class="tabimage-heading">Lorem Ipsum is simply dummy</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="image-box-p text-center">
+                    <img src="img/tab-slide.webp" alt="image-1" class="img-fluid mbportfolio">
+                    <h3 class="tabimage-heading">Lorem Ipsum is simply dummy</h3>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-4">
+                <div class="image-box-p text-center">
+                    <img src="img/tab-slide.webp" alt="image-1" class="img-fluid mbportfolio">
+                    <h3 class="tabimage-heading">Lorem Ipsum is simply dummy</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper content-2 py-4" style="display: none;" id="content-2">
+        test 2
+    </div>
+    <div class="wrapper content-3 py-4" style="display: none;" id="content-3">
+        test 3
+    </div>
+    <div class="wrapper content-4 py-4" style="display: none;" id="content-4">
+        test 4
+    </div>
+    <div class="wrapper content-5 py-4" style="display: none;" id="content-5">
+        test 5
+    </div>
+
+
+
+
+
+
     <!-- Portfolio Pagination Section End -->
 
 
@@ -245,6 +329,75 @@
     <script src="js/main.js"></script>
     <script src="js/script.js"></script>
 
+    <!-- Tab click content changing -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.wrapper[id^="content-"]');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    // Remove active class from all tabs and hide all content
+                    tabs.forEach(t => t.classList.remove('active'));
+                    contents.forEach(c => c.style.display = 'none');
+
+                    // Add active class to clicked tab and show corresponding content
+                    const contentId = this.getAttribute('data-content');
+                    document.querySelector(`#${contentId}`).style.display = 'block';
+                    this.classList.add('active');
+                });
+            });
+        });
+
+
+    </script>
+    <!-- Tab click content changing -->
+
+    <script>
+        const tabsBox = document.querySelector('.tabs-box'),
+            allTabs = tabsBox.querySelectorAll('.tab'),
+            arrowIcons = document.querySelectorAll('.icon i')
+
+        let isDragging = false
+
+        const handleIcons = scrollVal => {
+            let maxScrollableWidth = tabsBox.scrollWidth - tabsBox.clientWidth
+            arrowIcons[0].parentElement.style.display = scrollVal <= 0 ? 'none' : 'flex'
+            arrowIcons[1].parentElement.style.display =
+                maxScrollableWidth - scrollVal <= 1 ? 'none' : 'flex'
+        }
+
+        arrowIcons.forEach(icon => {
+            icon.addEventListener('click', () => {
+                // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
+                let scrollWidth = (tabsBox.scrollLeft += icon.id === 'left' ? -340 : 340)
+                handleIcons(scrollWidth)
+            })
+        })
+
+        allTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabsBox.querySelector('.active').classList.remove('active')
+                tab.classList.add('active')
+            })
+        })
+
+        const dragging = e => {
+            if (!isDragging) return
+            tabsBox.classList.add('dragging')
+            tabsBox.scrollLeft -= e.movementX
+            handleIcons(tabsBox.scrollLeft)
+        }
+
+        const dragStop = () => {
+            isDragging = false
+            tabsBox.classList.remove('dragging')
+        }
+
+        tabsBox.addEventListener('mousedown', () => (isDragging = true))
+        tabsBox.addEventListener('mousemove', dragging)
+        document.addEventListener('mouseup', dragStop)
+    </script>
 
 </body>
 
