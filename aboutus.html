@@ -40,8 +40,8 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid topbar px-3 px-md-4 px-lg-5 py-2">
+     <!-- Topbar Start -->
+     <div class="container-fluid topbar">
         <div class="row gx-0 align-items-center justify-content-between justify-content-lg-end">
             <!-- For Mobile and Tablet-Start -->
             <div class="col-6 d-flex d-lg-none justify-content-start align-items-center">
@@ -91,14 +91,23 @@
             <a href="index.html" class="navbar-brand p-0">
                 <img src="img/LIGOADS LOGO.webp" alt="LIGOADS">
             </a>
-            <!-- Mob menu icon -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars"></span>
-            </button>
-            <!-- Mob menu icon -->
+
+            <!--  Menu Icon -->
+            <div id="webapp_cover">
+                <div id="menu_button">
+                    <input type="checkbox" id="menu_checkbox" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                    <label for="menu_checkbox" id="menu_label">
+                        <div id="menu_text_bar"></div>
+                        <div id="menu_text_bar"></div>
+                        <div id="menu_text_bar"></div>
+                    </label>
+                </div>
+            </div>
+            <!--  Menu Icon -->
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto py-0">
+                <div class="navbar-nav ms-auto py-0 navbarbottom">
                     <a href="aboutus.html" class="nav-item nav-link active">ABOUT US</a>
                     <a href="service.html" class="nav-item nav-link">SERVICES</a>
                     <a href="portfolio.html" class="nav-item nav-link">PORTFOLIO</a>
@@ -106,8 +115,7 @@
                     <a href="clients.html" class="nav-item nav-link">CLIENTS</a>
                     <a href="contactus.html" class="nav-item nav-link">CONTACT US</a>
                 </div>
-
-                <a href="contact.html" class="get-a-quote  mb-3 mb-md-3 mb-lg-0">Get A Quote</a>
+                <a href="contactus.html" class="get-a-quote mb-3 mb-md-3 mb-lg-0">Get A Quote</a>
             </div>
         </nav>
     </div>
