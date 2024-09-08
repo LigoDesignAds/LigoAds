@@ -435,6 +435,23 @@ body {
   padding: 10px 3rem;
 }
 
+.custom-hr {
+  border: none;
+  border-top: 1px solid #e9e9e9;
+  width: 50%;
+}
+
+.ligoads-images-2 {
+  display: flex;
+  padding: 0px 0;
+}
+
+.ligoads-images-2 img {
+  width: 100px;
+  height: auto;
+  margin-right: 0px;
+}
+
 .ligoads-title {
   font-family: "Montserrat", sans-serif !important;
   color: #3369e9 !important;
@@ -476,6 +493,10 @@ body {
 .ligoads-button:hover {
   background: #0a3eb9 !important;
   color: #ffffff !important;
+}
+
+.logosmb {
+  margin-bottom: 40px !important;
 }
 
 /*** About End ***/
@@ -1739,29 +1760,30 @@ body {
   color: #ffffff !important;
   text-transform: uppercase;
   font-weight: 600;
-  letter-spacing: 5px;
-  font-size: 14px;
+  letter-spacing: 2px;
+  font-size: 12px;
 }
 
 .h1-ligoads-banner {
   font-family: "Montserrat", sans-serif !important;
-  font-size: 2.2em;
+  font-size: 3em;
   color: #ffffff !important;
   font-weight: 700;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
+  margin-top: 17px;
 }
 
 .p-home {
   font-family: "Public Sans", sans-serif !important;
-  color: #4d5765;
+  color: #e2e2e2;
   line-height: 1.8;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   margin-bottom: 36px;
 }
 
 .hero {
-  padding: 2rem;
+  padding: 3rem 8rem;
 }
 
 .ligoads-dflex {
@@ -1786,27 +1808,40 @@ body {
   text-align: center;
 }
 
-.logo-box {
-  margin-bottom: 1rem;
+.logo-box img {
+  /* margin-bottom: 1rem; */
+  width: 70%;
 }
 
-.stats-home {
+.logo-box-p {
+  font-family: "Public Sans", sans-serif !important;
+  margin-top: -8px;
+  font-size: 13px;
+  color: #4d5765;
+}
+
+.logo-box .stats-home {
   margin-top: 2rem;
 }
 
 .stat-home {
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 4px;
 }
 
 .number {
-  display: block;
-  font-size: 1.5rem;
+  font-size: 33px;
   font-weight: bold;
+  color: #3369e9;
+  margin-bottom: 0px;
 }
 
-.label {
+.stat-home .label {
   display: block;
+  font-size: 0.9em;
+  margin-top: -2px;
+  color: #3369e9;
+  font-weight: 500;
 }
 
 .right-section-box {
@@ -1814,7 +1849,7 @@ body {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  width: 62%;
+  width: 70%;
 }
 
 /*** Home Banner End ***/
@@ -2101,6 +2136,33 @@ body {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .hero {
+    padding: 0rem 0rem !important;
+  }
+  .h1-ligoads-banner {
+    font-size: 2em !important;
+    margin-top: 9px !important;
+  }
+  .ligoads-title-banner {
+    letter-spacing: 1px !important;
+    font-size: 10px !important;
+  }
+  .p-home {
+    font-size: 11px !important;
+  }
+  .ligoads-images-2 img {
+    width: 89px !important;
+  }
+  .custom-hr {
+    width: 97% !important;
+  }
+  .right-section-box {
+    padding: 1rem !important;
+    width: 98% !important;
+  }
+}
+
 /* Medium Mobile Devices (425px to 575px) */
 @media (min-width: 425px) and (max-width: 575px) {
   .info-box {
@@ -2322,6 +2384,9 @@ body {
 /* Medium (Tablet) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Styles for medium devices (tablets, 768px and up) */
+  .hero {
+    padding: 0rem 2rem !important;
+}
   .info-box {
     width: 82% !important;
     padding: 9px !important;
@@ -2435,6 +2500,23 @@ body {
 /* Large (Laptop) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Styles for large devices (desktops, 992px and up) */
+  .hero {
+    padding: 3rem 3rem !important;
+}
+.h1-ligoads-banner {
+  font-size: 2em !important;
+}
+
+.right-section-box {
+  width: 86% !important;
+}
+
+.custom-hr {
+ 
+  width: 60% !important;
+}
+
+
   .mob-co {
     padding-left: 0px;
     padding-right: 0px;
@@ -2498,8 +2580,21 @@ body {
 
 /* Extra large devices (large desktops, 1200px and up-110%) */
 @media (min-width: 1200px) and (max-width: 1299px) {
+  .right-section-box {
+    width: 85% !important;
+  }
+  .ligoads-title-banner {
+    font-size: 10px !important;
+  }
   .tabs-box .tab {
     font-size: 14px !important;
+  }
+  .h1-ligoads-banner {
+    font-size: 2.3em !important;
+  }
+
+  .p-home {
+    font-size: 12px !important;
   }
 
   .work-box {
@@ -2591,6 +2686,13 @@ body {
 
 /* Extra large devices (large desktops, 1200px and up-100%) */
 @media (min-width: 1300px) and (max-width: 1399px) {
+  .right-section-box {
+    width: 77% !important;
+  }
+  .h1-ligoads-banner {
+    font-size: 2.5em !important;
+  }
+
   .work-box {
     width: 315px !important;
     height: 311px !important;
@@ -2722,6 +2824,25 @@ body {
 
 /* Ultra large devices (very large desktops, 1600px and up 80%) */
 @media (min-width: 1600px) and (max-width: 1799.98px) {
+  .logo-box-p {
+    font-size: 15px !important;
+    margin-top: 0px;
+  }
+  .number {
+    font-size: 39px !important;
+  }
+  .stat-home .label {
+    font-size: 0.99em !important;
+  }
+  .ligoads-title-banner {
+    font-size: 14px !important;
+  }
+  .p-home {
+    font-size: 16px !important;
+  }
+  .h1-ligoads-banner {
+    font-size: 3.3em !important;
+  }
   .topbar {
     padding: 12px 51px 0px 22px !important;
   }
@@ -2884,6 +3005,25 @@ body {
 
 /* Super large devices (huge desktops, 1800px and up) */
 @media (min-width: 1800px) and (max-width: 1999.98px) {
+  .logo-box-p {
+    font-size: 15px !important;
+    margin-top: 0px;
+  }
+  .number {
+    font-size: 39px !important;
+  }
+  .stat-home .label {
+    font-size: 0.99em !important;
+  }
+  .ligoads-title-banner {
+    font-size: 15px !important;
+  }
+  .p-home {
+    font-size: 17px !important;
+  }
+  .h1-ligoads-banner {
+    font-size: 3.3em !important;
+  }
   .topbar {
     padding: 12px 51px 0px 22px !important;
   }
@@ -3042,6 +3182,25 @@ body {
   }
 }
 @media (min-width: 2000px) {
+  .logo-box-p {
+    font-size: 15px !important;
+    margin-top: 0px;
+  }
+  .number {
+    font-size: 39px !important;
+  }
+  .stat-home .label {
+    font-size: 0.99em !important;
+  }
+  .ligoads-title-banner {
+    font-size: 15px !important;
+  }
+  .p-home {
+    font-size: 17px !important;
+  }
+  .h1-ligoads-banner {
+    font-size: 3.3em !important;
+  }
   .topbar {
     padding: 12px 51px 0px 22px !important;
   }
