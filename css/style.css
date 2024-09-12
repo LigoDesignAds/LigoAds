@@ -2758,6 +2758,10 @@ body {
     margin: 0;
     font-size: 14px;
   }
+  .tabimage-heading {
+ 
+    font-size: 13px !important; 
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up-100%) */
@@ -3106,10 +3110,18 @@ body {
   .footer-menu {
     margin-bottom: 53px;
   }
+  .tabimage-heading {
+ 
+    font-size: 18px !important; 
+  }
 }
 
 /* Super large devices (huge desktops, 1800px and up) */
 @media (min-width: 1800px) and (max-width: 1999.98px) {
+  .tabimage-heading {
+ 
+    font-size: 19px !important; 
+  }
   .card-content {
     height: 211px !important;
   }
@@ -3315,6 +3327,13 @@ body {
   }
 }
 @media (min-width: 2000px) {
+  .tabs-box .tab {
+    font-size: 21px !important;
+}
+.tabimage-heading {
+ 
+  font-size: 19px !important; 
+}
   .testimonial-card {
     height: 249px !important;
     min-height: 240px !important;
