@@ -15,6 +15,11 @@ body {
   font-family: "Montserrat", sans-serif !important;
   /* background-color: #121212; */
 }
+
+html {
+  overflow-x: hidden !important;
+}
+
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
@@ -630,13 +635,13 @@ body {
 }
 
 .box-1 {
-  top: 19%;
+  top: 25%;
   right: -9%;
   width: 182px;
 }
 
-.box-2 {
-  bottom: 9%;
+.box-2 { 
+  bottom: 14%;
   right: -18%;
   width: 182px;
 }
@@ -2750,12 +2755,12 @@ body {
     font-size: 12px;
   }
   .box-1 {
-    top: 19% !important;
+    top: 25% !important; 
     right: -11% !important;
     width: 168px !important;
   }
   .box-2 {
-    bottom: 9%;
+    bottom: 15%;
     right: -18%;
     width: 164px !important;
   }
@@ -2816,6 +2821,11 @@ body {
 
 /* Extra extra large devices (larger desktops, 1400px and up 90%) */
 @media (min-width: 1400px) and (max-width: 1599.98px) {
+  .footer-menu::before,
+  .footer-menu::after {
+    width: 60% !important;
+  }
+
   .hero {
     padding: 5rem 8rem !important;
   }
@@ -2916,6 +2926,10 @@ body {
 
 /* Ultra large devices (very large desktops, 1600px and up 80%) */
 @media (min-width: 1600px) and (max-width: 1799.98px) {
+  .footer-menu::before, .footer-menu::after {
+    width: 66% !important;
+}
+
   .card-content {
     height: 211px !important;
   }
@@ -3127,6 +3141,7 @@ body {
 
 /* Super large devices (huge desktops, 1800px and up) */
 @media (min-width: 1800px) and (max-width: 1999.98px) {
+ 
   .tabimage-heading {
  
     font-size: 19px !important; 
@@ -3322,7 +3337,7 @@ body {
 
   .footer-menu::before,
   .footer-menu::after {
-    width: 64%;
+    width: 66%;
   }
   .footer-menu {
     margin-bottom: 53px;
@@ -3531,7 +3546,7 @@ body {
 
   .footer-menu::before,
   .footer-menu::after {
-    width: 64%;
+    width: 71%;
   }
   .footer-menu {
     margin-bottom: 53px;
