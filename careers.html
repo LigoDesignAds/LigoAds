@@ -20,7 +20,7 @@
 
 
     <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -126,7 +126,7 @@
     <!-- Career Section Banner Start -->
     <div class="about-us-container">
         <h1 class="h1-ligoads-white">Careers</h1>
-        <p class="p-ligoads-white">
+        <p class="p-ligoads-white"  data-aos="fade-up">
             Join Ligoads, the best digital marketing agency in Kerala, and take your career to new heights. We offer
             exciting opportunities for growth in a dynamic environment. Be part of a <br />team that values innovation,
             creativity, and excellence. Explore our career openings and contribute to our continued success
@@ -364,11 +364,11 @@
         <div class="container-fluid">
             <div class="p-padding">
                 <div class="row">
-                    <div class="col-md-6 col-12">
+                    <div class="col-md-6 col-12" data-aos="fade-right">
                         <h1 class="h1-ligoads">Subscribe to Get Special Price</h1>
                         <p class="p-ligoads">Subscribe now to receive exclusive offers and special pricing on our top-notch digital marketing services. Don’t miss out!</p>
                     </div>
-                    <div class="col-md-6 col-12">
+                    <div class="col-md-6 col-12" data-aos="fade-left">
                         <form>
                             <div class="ligoads-dflex" id="">
                                 <input type="email" name="" id="" required="" value=""
@@ -443,7 +443,9 @@
         <script src="lib/counterup/counterup.min.js"></script>
         <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
 
-
+        <script type="text/javascript" src="js/aos.js"></script>
+        <script>AOS.init({ easing: 'ease-out-back', duration: 1200, });</script>
+        
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
         <script src="js/script.js"></script>
