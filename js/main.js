@@ -19,8 +19,12 @@
     // Sticky Navbar
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45) {
+            // Remove overflow-x: hidden when scrolling
+            $('html, body').css('overflow-x', 'visible');
             $('.nav-bar').addClass('sticky-top shadow-sm');
         } else {
+            // Reapply overflow-x: hidden when not scrolling
+            $('html, body').css('overflow-x', 'hidden');
             $('.nav-bar').removeClass('sticky-top shadow-sm');
         }
     });
