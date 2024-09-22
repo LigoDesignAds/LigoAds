@@ -63,11 +63,14 @@
             </div>
             <!-- For Mobile and Tablet: Display Social Media Icons at the End -->
             <div class="col-6 d-flex justify-content-end d-lg-none">
-                <a class="btn btn-sm  btn-square rounded-circle me-1" href="https://www.facebook.com/ligoads?mibextid=qi2Omg&rdid=BPE0fJRt6uyJcQWQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3Pn8ZckM6aGJofCM%2F%3Fmibextid%3Dqi2Omg" target="_blank"><i
-                        class="fab fa-facebook-f fw-normal text-secondary"></i></a>
-                <a class="btn btn-sm  btn-square rounded-circle me-1" href="https://www.instagram.com/ligoads/?igsh=OGc5amh6bjh6cjB4" target="_blank"><i
+                <a class="btn btn-sm  btn-square rounded-circle me-1"
+                    href="https://www.facebook.com/ligoads?mibextid=qi2Omg&rdid=BPE0fJRt6uyJcQWQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3Pn8ZckM6aGJofCM%2F%3Fmibextid%3Dqi2Omg"
+                    target="_blank"><i class="fab fa-facebook-f fw-normal text-secondary"></i></a>
+                <a class="btn btn-sm  btn-square rounded-circle me-1"
+                    href="https://www.instagram.com/ligoads/?igsh=OGc5amh6bjh6cjB4" target="_blank"><i
                         class="fab fa-instagram fw-normal text-secondary"></i></a>
-                <a class="btn btn-sm  btn-square rounded-circle me-1" href="https://www.linkedin.com/company/ligoads/about/" target="_blank"><i
+                <a class="btn btn-sm  btn-square rounded-circle me-1"
+                    href="https://www.linkedin.com/company/ligoads/about/" target="_blank"><i
                         class="fab fa-linkedin-in fw-normal text-secondary"></i></a>
             </div>
             <!-- For Mobile and Tablet-End -->
@@ -79,11 +82,14 @@
                             alt="Mail Icon" style="width: 1.1em; height: 1.3em;">ligoadsindia@gmail.com</a>
                     <a href="tel:+918137838136" class="text-muted amail me-3"> <img src="img/icons/call.svg"
                             alt="Phone Icon" style="width: 1.1em; height: 1.3em;">+91 8137 8381 36</a>
-                    <a class="btn btn-sm  btn-square rounded-circle me-1" href="https://www.facebook.com/ligoads?mibextid=qi2Omg&rdid=BPE0fJRt6uyJcQWQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3Pn8ZckM6aGJofCM%2F%3Fmibextid%3Dqi2Omg" target="_blank"><i
-                            class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm  btn-square rounded-circle me-1" href="https://www.instagram.com/ligoads/?igsh=OGc5amh6bjh6cjB4" target="_blank"><i
+                    <a class="btn btn-sm  btn-square rounded-circle me-1"
+                        href="https://www.facebook.com/ligoads?mibextid=qi2Omg&rdid=BPE0fJRt6uyJcQWQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3Pn8ZckM6aGJofCM%2F%3Fmibextid%3Dqi2Omg"
+                        target="_blank"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm  btn-square rounded-circle me-1"
+                        href="https://www.instagram.com/ligoads/?igsh=OGc5amh6bjh6cjB4" target="_blank"><i
                             class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm  btn-square rounded-circle me-1" href="https://www.linkedin.com/company/ligoads/about/" target="_blank"><i
+                    <a class="btn btn-sm  btn-square rounded-circle me-1"
+                        href="https://www.linkedin.com/company/ligoads/about/" target="_blank"><i
                             class="fab fa-linkedin-in fw-normaly"></i></a>
                 </div>
             </div>
@@ -176,13 +182,13 @@
                                 <div class="row stat-row">
                                     <div class="col-md-6">
                                         <div class="stat-home">
-                                            <span class="number" id="locations">1+</span>
+                                            <span class="number" id="locations" data-target="1">0</span>
                                             <span class="label">Locations</span>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="stat-home">
-                                            <span class="number" id="projects">100+</span>
+                                            <span class="number" id="projects" data-target="100">0</span>
                                             <span class="label">Projects Done</span>
                                         </div>
                                     </div>
@@ -190,13 +196,13 @@
                                 <div class="row stat-row">
                                     <div class="col-md-6">
                                         <div class="stat-home">
-                                            <span class="number" id="years">1+</span>
+                                            <span class="number" id="years" data-target="1">0</span>
                                             <span class="label">Years</span>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="stat-home">
-                                            <span class="number" id="clients">50+</span>
+                                            <span class="number" id="clients" data-target="50">0</span>
                                             <span class="label">Worldwide Clients</span>
                                         </div>
                                     </div>
@@ -643,7 +649,7 @@
     <!-- NewsLetter Section -  Start -->
     <div class="newsp-padding">
         <div class="container-fluid">
-            <div class="p-padding">
+            <div class="p-padding mob-pd">
                 <div class="row">
                     <div class="col-md-6 col-12" data-aos="fade-right">
                         <h1 class="h1-ligoads">Subscribe to Get Special Price</h1>
@@ -656,7 +662,7 @@
                                 <input type="email" name="" id="" required="" value=""
                                     class="required email form-control emailbtn" placeholder="Enter your email"
                                     aria-required="true">
-                                <button class="ligoads-button" type="submit">Subscribe</button>
+                                <button class="ligoads-button-sub" type="submit">Subscribe</button>
                             </div>
                         </form>
                     </div>
@@ -679,7 +685,7 @@
                         media, and web development. We drive results with innovative strategies and expert solutions</p>
                 </div>
 
-                <div class="footer-menu">
+                <div class="footer-menu no-mob-tab">
                     <ul>
                         <li><a href="index.html" class="active">HOME</a></li>
                         <li><a href="aboutus.html">ABOUT US</a></li>
@@ -692,10 +698,28 @@
                     </ul>
                 </div>
 
+                <div class="footer-menu for-mob-tab">
+                    <ul class="footer-menu-column">
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="aboutus.html">ABOUT US</a></li>
+                        <li><a href="service.html">SERVICES</a></li>
+                        <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    </ul>
+                    <ul class="footer-menu-column">
+                        <li><a href="careers.html">CAREERS</a></li>
+                        <li><a href="clients.html">CLIENTS</a></li>
+                        <li><a href="contactus.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+
+
                 <div class="social-icons tabp">
-                    <a href="https://www.facebook.com/ligoads?mibextid=qi2Omg&rdid=BPE0fJRt6uyJcQWQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3Pn8ZckM6aGJofCM%2F%3Fmibextid%3Dqi2Omg" class="fab fa-facebook-f cc-f" target="_blank"></a>
-                    <a href="https://www.instagram.com/ligoads/?igsh=OGc5amh6bjh6cjB4" class="fab fa-instagram cc-f" target="_blank"></a>
-                    <a href="https://www.linkedin.com/company/ligoads/about/" class="fab fa-linkedin-in cc-f" target="_blank"></a>
+                    <a href="https://www.facebook.com/ligoads?mibextid=qi2Omg&rdid=BPE0fJRt6uyJcQWQ&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F3Pn8ZckM6aGJofCM%2F%3Fmibextid%3Dqi2Omg"
+                        class="fab fa-facebook-f cc-f" target="_blank"></a>
+                    <a href="https://www.instagram.com/ligoads/?igsh=OGc5amh6bjh6cjB4" class="fab fa-instagram cc-f"
+                        target="_blank"></a>
+                    <a href="https://www.linkedin.com/company/ligoads/about/" class="fab fa-linkedin-in cc-f"
+                        target="_blank"></a>
 
                 </div>
                 <p class="social-description">Follow us on social media for updates and news!</p>
@@ -706,7 +730,8 @@
         <!-- Bottom Section -->
         <div class="footer-bottom footerpadding">
             <div>
-                <p class="footermb">Copyright © 2024 <a href="index.html" target="_blank" class="ligoads">Ligoads</a>. All Rights
+                <p class="footermb">Copyright © 2024 <a href="index.html" target="_blank" class="ligoads">Ligoads</a>.
+                    All Rights
                     Reserved.
 
                 </p>
@@ -798,7 +823,29 @@
 
     </script>
 
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll('.number');
 
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-target');
+                const count = +counter.innerText.slice(0, -1); // Remove the "+" for counting
+
+                const increment = target / 200; // Adjust the duration of the count-up
+
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment) + '+'; // Add "+" after the incremented value
+                    setTimeout(updateCount, 10); // Adjust speed of the increment
+                } else {
+                    counter.innerText = target + '+'; // Ensure it reaches the target with "+"
+                }
+            };
+
+            updateCount();
+        });
+    });
+</script>
 </body>
 
 
