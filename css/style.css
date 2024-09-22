@@ -958,7 +958,18 @@ html {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .geo {
+    width: 104px !important;
+    height: 52px;
+}
+}
+
 @media (min-width: 992px) and (max-width: 1000px) {
+  .geo {
+    width: 104px !important;
+    height: 52px;
+}
   .card-content {
     height: 207px !important;
     padding-top: 0px !important;
@@ -2336,6 +2347,10 @@ html {
     padding-left: 0px;
     padding-right: 0px;
   }
+  .geo {
+    width: 70px !important;
+    height: 52px;
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -2381,6 +2396,10 @@ html {
 
 /* Medium Mobile Devices (425px to 575px) */
 @media (min-width: 425px) and (max-width: 575px) {
+  .geo {
+    width: 57px !important;
+    height: 52px;
+}
   .mob-pd {
     padding: 2rem 2rem !important;
   }
@@ -2543,6 +2562,10 @@ html {
 
 /* Small (Tablet) */
 @media (min-width: 576px) and (max-width: 767px) {
+  .geo {
+    width: 58px !important;
+    height: 52px;
+}
   .back-to-top {
     right: 84px !important;
   }
@@ -2625,6 +2648,10 @@ html {
 /* Medium (Tablet) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* Styles for medium devices (tablets, 768px and up) */
+  .geo {
+    width: 59px !important;
+    height: 52px;
+}
   .back-to-top {
     right: 84px !important;
   }
@@ -3822,6 +3849,7 @@ html {
   .footermb {
     font-size: 13px !important;
   }
+ 
 }
 
 .bg-slidesection {
